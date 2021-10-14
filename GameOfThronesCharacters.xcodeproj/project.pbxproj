@@ -10,12 +10,31 @@
 		36F3EA232718A31C00E6DB63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA222718A31C00E6DB63 /* AppDelegate.swift */; };
 		36F3EA252718A31C00E6DB63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA242718A31C00E6DB63 /* SceneDelegate.swift */; };
 		36F3EA272718A31C00E6DB63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA262718A31C00E6DB63 /* ViewController.swift */; };
-		36F3EA2A2718A31C00E6DB63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36F3EA282718A31C00E6DB63 /* Main.storyboard */; };
 		36F3EA2C2718A31E00E6DB63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36F3EA2B2718A31E00E6DB63 /* Assets.xcassets */; };
 		36F3EA2F2718A31E00E6DB63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36F3EA2D2718A31E00E6DB63 /* LaunchScreen.storyboard */; };
 		36F3EA3A2718A31E00E6DB63 /* GameOfThronesCharactersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA392718A31E00E6DB63 /* GameOfThronesCharactersTests.swift */; };
 		36F3EA442718A31E00E6DB63 /* GameOfThronesCharactersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA432718A31E00E6DB63 /* GameOfThronesCharactersUITests.swift */; };
 		36F3EA462718A31E00E6DB63 /* GameOfThronesCharactersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA452718A31E00E6DB63 /* GameOfThronesCharactersUITestsLaunchTests.swift */; };
+		36F3EA712718A37B00E6DB63 /* GenericValueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA532718A37B00E6DB63 /* GenericValueProtocol.swift */; };
+		36F3EA722718A37B00E6DB63 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA542718A37B00E6DB63 /* BaseRequest.swift */; };
+		36F3EA732718A37B00E6DB63 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA552718A37B00E6DB63 /* BaseViewController.swift */; };
+		36F3EA742718A37B00E6DB63 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA562718A37B00E6DB63 /* BaseTableViewCell.swift */; };
+		36F3EA752718A37B00E6DB63 /* GenericDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA572718A37B00E6DB63 /* GenericDataProtocol.swift */; };
+		36F3EA762718A37B00E6DB63 /* GenericBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA582718A37B00E6DB63 /* GenericBaseView.swift */; };
+		36F3EA772718A37B00E6DB63 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA592718A37B00E6DB63 /* BaseView.swift */; };
+		36F3EA792718A37B00E6DB63 /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA5D2718A37B00E6DB63 /* CharacterResponse.swift */; };
+		36F3EA7A2718A37B00E6DB63 /* CharacterApiServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA5E2718A37B00E6DB63 /* CharacterApiServiceProvider.swift */; };
+		36F3EA7B2718A37B00E6DB63 /* ContinentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA602718A37B00E6DB63 /* ContinentResponse.swift */; };
+		36F3EA7C2718A37B00E6DB63 /* ContinentsApiServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA612718A37B00E6DB63 /* ContinentsApiServiceProvider.swift */; };
+		36F3EA7D2718A37B00E6DB63 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA642718A37B00E6DB63 /* CharacterListViewController.swift */; };
+		36F3EA7E2718A37B00E6DB63 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA652718A37B00E6DB63 /* CharacterListViewModel.swift */; };
+		36F3EA7F2718A37B00E6DB63 /* CharacterListViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA662718A37B00E6DB63 /* CharacterListViewBuilder.swift */; };
+		36F3EA802718A37B00E6DB63 /* TabBarViewImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA692718A37B00E6DB63 /* TabBarViewImages.swift */; };
+		36F3EA812718A37B00E6DB63 /* ContinentListViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA6B2718A37B00E6DB63 /* ContinentListViewBuilder.swift */; };
+		36F3EA822718A37B00E6DB63 /* ContinentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA6C2718A37B00E6DB63 /* ContinentListViewModel.swift */; };
+		36F3EA832718A37B00E6DB63 /* ContinentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA6D2718A37B00E6DB63 /* ContinentListViewController.swift */; };
+		36F3EA842718A37B00E6DB63 /* MainTabBarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA6F2718A37B00E6DB63 /* MainTabBarBuilder.swift */; };
+		36F3EA852718A37B00E6DB63 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA702718A37B00E6DB63 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +59,6 @@
 		36F3EA222718A31C00E6DB63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36F3EA242718A31C00E6DB63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		36F3EA262718A31C00E6DB63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		36F3EA292718A31C00E6DB63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36F3EA2B2718A31E00E6DB63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36F3EA2E2718A31E00E6DB63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36F3EA302718A31E00E6DB63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +67,26 @@
 		36F3EA3F2718A31E00E6DB63 /* GameOfThronesCharactersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfThronesCharactersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36F3EA432718A31E00E6DB63 /* GameOfThronesCharactersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfThronesCharactersUITests.swift; sourceTree = "<group>"; };
 		36F3EA452718A31E00E6DB63 /* GameOfThronesCharactersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfThronesCharactersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		36F3EA532718A37B00E6DB63 /* GenericValueProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericValueProtocol.swift; sourceTree = "<group>"; };
+		36F3EA542718A37B00E6DB63 /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		36F3EA552718A37B00E6DB63 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		36F3EA562718A37B00E6DB63 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		36F3EA572718A37B00E6DB63 /* GenericDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericDataProtocol.swift; sourceTree = "<group>"; };
+		36F3EA582718A37B00E6DB63 /* GenericBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericBaseView.swift; sourceTree = "<group>"; };
+		36F3EA592718A37B00E6DB63 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		36F3EA5D2718A37B00E6DB63 /* CharacterResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
+		36F3EA5E2718A37B00E6DB63 /* CharacterApiServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterApiServiceProvider.swift; sourceTree = "<group>"; };
+		36F3EA602718A37B00E6DB63 /* ContinentResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinentResponse.swift; sourceTree = "<group>"; };
+		36F3EA612718A37B00E6DB63 /* ContinentsApiServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinentsApiServiceProvider.swift; sourceTree = "<group>"; };
+		36F3EA642718A37B00E6DB63 /* CharacterListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
+		36F3EA652718A37B00E6DB63 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
+		36F3EA662718A37B00E6DB63 /* CharacterListViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterListViewBuilder.swift; sourceTree = "<group>"; };
+		36F3EA692718A37B00E6DB63 /* TabBarViewImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewImages.swift; sourceTree = "<group>"; };
+		36F3EA6B2718A37B00E6DB63 /* ContinentListViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinentListViewBuilder.swift; sourceTree = "<group>"; };
+		36F3EA6C2718A37B00E6DB63 /* ContinentListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinentListViewModel.swift; sourceTree = "<group>"; };
+		36F3EA6D2718A37B00E6DB63 /* ContinentListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinentListViewController.swift; sourceTree = "<group>"; };
+		36F3EA6F2718A37B00E6DB63 /* MainTabBarBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarBuilder.swift; sourceTree = "<group>"; };
+		36F3EA702718A37B00E6DB63 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +137,15 @@
 		36F3EA212718A31C00E6DB63 /* GameOfThronesCharacters */ = {
 			isa = PBXGroup;
 			children = (
+				36F3EA522718A37B00E6DB63 /* BaseComponents */,
+				36F3EA862718A48C00E6DB63 /* Components */,
+				36F3EA6E2718A37B00E6DB63 /* MainTabBar */,
+				36F3EA5B2718A37B00E6DB63 /* Models */,
+				36F3EA622718A37B00E6DB63 /* Modules */,
+				36F3EA672718A37B00E6DB63 /* Utilities */,
 				36F3EA222718A31C00E6DB63 /* AppDelegate.swift */,
 				36F3EA242718A31C00E6DB63 /* SceneDelegate.swift */,
 				36F3EA262718A31C00E6DB63 /* ViewController.swift */,
-				36F3EA282718A31C00E6DB63 /* Main.storyboard */,
 				36F3EA2B2718A31E00E6DB63 /* Assets.xcassets */,
 				36F3EA2D2718A31E00E6DB63 /* LaunchScreen.storyboard */,
 				36F3EA302718A31E00E6DB63 /* Info.plist */,
@@ -125,6 +168,108 @@
 				36F3EA452718A31E00E6DB63 /* GameOfThronesCharactersUITestsLaunchTests.swift */,
 			);
 			path = GameOfThronesCharactersUITests;
+			sourceTree = "<group>";
+		};
+		36F3EA522718A37B00E6DB63 /* BaseComponents */ = {
+			isa = PBXGroup;
+			children = (
+				36F3EA532718A37B00E6DB63 /* GenericValueProtocol.swift */,
+				36F3EA542718A37B00E6DB63 /* BaseRequest.swift */,
+				36F3EA552718A37B00E6DB63 /* BaseViewController.swift */,
+				36F3EA562718A37B00E6DB63 /* BaseTableViewCell.swift */,
+				36F3EA572718A37B00E6DB63 /* GenericDataProtocol.swift */,
+				36F3EA582718A37B00E6DB63 /* GenericBaseView.swift */,
+				36F3EA592718A37B00E6DB63 /* BaseView.swift */,
+			);
+			path = BaseComponents;
+			sourceTree = "<group>";
+		};
+		36F3EA5B2718A37B00E6DB63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36F3EA5C2718A37B00E6DB63 /* CharacterModel */,
+				36F3EA5F2718A37B00E6DB63 /* ContinentModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		36F3EA5C2718A37B00E6DB63 /* CharacterModel */ = {
+			isa = PBXGroup;
+			children = (
+				36F3EA5D2718A37B00E6DB63 /* CharacterResponse.swift */,
+				36F3EA5E2718A37B00E6DB63 /* CharacterApiServiceProvider.swift */,
+			);
+			path = CharacterModel;
+			sourceTree = "<group>";
+		};
+		36F3EA5F2718A37B00E6DB63 /* ContinentModel */ = {
+			isa = PBXGroup;
+			children = (
+				36F3EA602718A37B00E6DB63 /* ContinentResponse.swift */,
+				36F3EA612718A37B00E6DB63 /* ContinentsApiServiceProvider.swift */,
+			);
+			path = ContinentModel;
+			sourceTree = "<group>";
+		};
+		36F3EA622718A37B00E6DB63 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				36F3EA632718A37B00E6DB63 /* CharacterList */,
+				36F3EA6A2718A37B00E6DB63 /* ContinentList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		36F3EA632718A37B00E6DB63 /* CharacterList */ = {
+			isa = PBXGroup;
+			children = (
+				36F3EA642718A37B00E6DB63 /* CharacterListViewController.swift */,
+				36F3EA652718A37B00E6DB63 /* CharacterListViewModel.swift */,
+				36F3EA662718A37B00E6DB63 /* CharacterListViewBuilder.swift */,
+			);
+			path = CharacterList;
+			sourceTree = "<group>";
+		};
+		36F3EA672718A37B00E6DB63 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				36F3EA682718A37B00E6DB63 /* AssetHelpers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		36F3EA682718A37B00E6DB63 /* AssetHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				36F3EA692718A37B00E6DB63 /* TabBarViewImages.swift */,
+			);
+			path = AssetHelpers;
+			sourceTree = "<group>";
+		};
+		36F3EA6A2718A37B00E6DB63 /* ContinentList */ = {
+			isa = PBXGroup;
+			children = (
+				36F3EA6B2718A37B00E6DB63 /* ContinentListViewBuilder.swift */,
+				36F3EA6C2718A37B00E6DB63 /* ContinentListViewModel.swift */,
+				36F3EA6D2718A37B00E6DB63 /* ContinentListViewController.swift */,
+			);
+			path = ContinentList;
+			sourceTree = "<group>";
+		};
+		36F3EA6E2718A37B00E6DB63 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				36F3EA6F2718A37B00E6DB63 /* MainTabBarBuilder.swift */,
+				36F3EA702718A37B00E6DB63 /* MainTabBarController.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		36F3EA862718A48C00E6DB63 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +378,6 @@
 			files = (
 				36F3EA2F2718A31E00E6DB63 /* LaunchScreen.storyboard in Resources */,
 				36F3EA2C2718A31E00E6DB63 /* Assets.xcassets in Resources */,
-				36F3EA2A2718A31C00E6DB63 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +402,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36F3EA792718A37B00E6DB63 /* CharacterResponse.swift in Sources */,
+				36F3EA822718A37B00E6DB63 /* ContinentListViewModel.swift in Sources */,
+				36F3EA7A2718A37B00E6DB63 /* CharacterApiServiceProvider.swift in Sources */,
+				36F3EA722718A37B00E6DB63 /* BaseRequest.swift in Sources */,
+				36F3EA812718A37B00E6DB63 /* ContinentListViewBuilder.swift in Sources */,
 				36F3EA272718A31C00E6DB63 /* ViewController.swift in Sources */,
+				36F3EA852718A37B00E6DB63 /* MainTabBarController.swift in Sources */,
+				36F3EA842718A37B00E6DB63 /* MainTabBarBuilder.swift in Sources */,
+				36F3EA802718A37B00E6DB63 /* TabBarViewImages.swift in Sources */,
+				36F3EA712718A37B00E6DB63 /* GenericValueProtocol.swift in Sources */,
+				36F3EA832718A37B00E6DB63 /* ContinentListViewController.swift in Sources */,
+				36F3EA7B2718A37B00E6DB63 /* ContinentResponse.swift in Sources */,
 				36F3EA232718A31C00E6DB63 /* AppDelegate.swift in Sources */,
+				36F3EA7D2718A37B00E6DB63 /* CharacterListViewController.swift in Sources */,
+				36F3EA742718A37B00E6DB63 /* BaseTableViewCell.swift in Sources */,
+				36F3EA762718A37B00E6DB63 /* GenericBaseView.swift in Sources */,
+				36F3EA752718A37B00E6DB63 /* GenericDataProtocol.swift in Sources */,
+				36F3EA772718A37B00E6DB63 /* BaseView.swift in Sources */,
+				36F3EA7E2718A37B00E6DB63 /* CharacterListViewModel.swift in Sources */,
 				36F3EA252718A31C00E6DB63 /* SceneDelegate.swift in Sources */,
+				36F3EA7F2718A37B00E6DB63 /* CharacterListViewBuilder.swift in Sources */,
+				36F3EA7C2718A37B00E6DB63 /* ContinentsApiServiceProvider.swift in Sources */,
+				36F3EA732718A37B00E6DB63 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +461,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		36F3EA282718A31C00E6DB63 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				36F3EA292718A31C00E6DB63 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		36F3EA2D2718A31E00E6DB63 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,7 +600,6 @@
 				INFOPLIST_FILE = GameOfThronesCharacters/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,7 +627,6 @@
 				INFOPLIST_FILE = GameOfThronesCharacters/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
