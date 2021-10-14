@@ -13,6 +13,11 @@ class ContinentListViewBuilder {
         
         let viewModel = ContinentListViewModel()
         let viewController = ContinentListViewController(viewModel: viewModel)
+        
+        viewController.title = "Continents"
+        viewController.tabBarItem.image = TabBarViewImages.continents.value
+        viewController.tabBarItem.selectedImage = TabBarViewImages.continentsSelected.value
+        
         return viewController
     }
 }

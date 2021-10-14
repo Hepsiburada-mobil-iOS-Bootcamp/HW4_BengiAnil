@@ -15,6 +15,6 @@ class ContinentsApiServiceProvider: ApiServiceProvider<BaseRequest> {
     init() {
         super.init(method: .get, baseUrl: Self.url)
     }
-    
+
 }
 

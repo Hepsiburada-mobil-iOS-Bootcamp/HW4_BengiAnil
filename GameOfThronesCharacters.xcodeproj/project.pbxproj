@@ -35,6 +35,14 @@
 		36F3EA832718A37B00E6DB63 /* ContinentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA6D2718A37B00E6DB63 /* ContinentListViewController.swift */; };
 		36F3EA842718A37B00E6DB63 /* MainTabBarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA6F2718A37B00E6DB63 /* MainTabBarBuilder.swift */; };
 		36F3EA852718A37B00E6DB63 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA702718A37B00E6DB63 /* MainTabBarController.swift */; };
+		36F3EA8C2718AC8400E6DB63 /* LabelPackComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA892718AC8300E6DB63 /* LabelPackComponentData.swift */; };
+		36F3EA8D2718AC8400E6DB63 /* LabelPackComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA8A2718AC8400E6DB63 /* LabelPackComponent.swift */; };
+		36F3EA902718ACBC00E6DB63 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA8F2718ACBC00E6DB63 /* FontManager.swift */; };
+		36F3EA932718AD2900E6DB63 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA922718AD2900E6DB63 /* CustomTableViewCell.swift */; };
+		36F3EA962718AD3600E6DB63 /* CustomTableViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA952718AD3600E6DB63 /* CustomTableViewCellData.swift */; };
+		36F3EA982718AD6500E6DB63 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA972718AD6500E6DB63 /* CustomTableView.swift */; };
+		36F3EA9A2718AD6D00E6DB63 /* CustomTableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3EA992718AD6D00E6DB63 /* CustomTableViewProtocol.swift */; };
+		36F3EA9F2718B03C00E6DB63 /* DefaultNetworkOperationPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 36F3EA9E2718B03C00E6DB63 /* DefaultNetworkOperationPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +95,14 @@
 		36F3EA6D2718A37B00E6DB63 /* ContinentListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinentListViewController.swift; sourceTree = "<group>"; };
 		36F3EA6F2718A37B00E6DB63 /* MainTabBarBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarBuilder.swift; sourceTree = "<group>"; };
 		36F3EA702718A37B00E6DB63 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		36F3EA892718AC8300E6DB63 /* LabelPackComponentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelPackComponentData.swift; sourceTree = "<group>"; };
+		36F3EA8A2718AC8400E6DB63 /* LabelPackComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelPackComponent.swift; sourceTree = "<group>"; };
+		36F3EA8F2718ACBC00E6DB63 /* FontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		36F3EA922718AD2900E6DB63 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		36F3EA952718AD3600E6DB63 /* CustomTableViewCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCellData.swift; sourceTree = "<group>"; };
+		36F3EA972718AD6500E6DB63 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
+		36F3EA992718AD6D00E6DB63 /* CustomTableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewProtocol.swift; sourceTree = "<group>"; };
+		36F3EA9C2718AF8E00E6DB63 /* DefaultNetworkOperationPackage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DefaultNetworkOperationPackage; path = ../DefaultNetworkOperationPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36F3EA9F2718B03C00E6DB63 /* DefaultNetworkOperationPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +137,7 @@
 				36F3EA212718A31C00E6DB63 /* GameOfThronesCharacters */,
 				36F3EA382718A31E00E6DB63 /* GameOfThronesCharactersTests */,
 				36F3EA422718A31E00E6DB63 /* GameOfThronesCharactersUITests */,
+				36F3EA9B2718AF8E00E6DB63 /* Packages */,
 				36F3EA202718A31C00E6DB63 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -223,9 +241,9 @@
 		36F3EA632718A37B00E6DB63 /* CharacterList */ = {
 			isa = PBXGroup;
 			children = (
+				36F3EA662718A37B00E6DB63 /* CharacterListViewBuilder.swift */,
 				36F3EA642718A37B00E6DB63 /* CharacterListViewController.swift */,
 				36F3EA652718A37B00E6DB63 /* CharacterListViewModel.swift */,
-				36F3EA662718A37B00E6DB63 /* CharacterListViewBuilder.swift */,
 			);
 			path = CharacterList;
 			sourceTree = "<group>";
@@ -234,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				36F3EA682718A37B00E6DB63 /* AssetHelpers */,
+				36F3EA8E2718ACBC00E6DB63 /* FontManagers */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -268,8 +287,46 @@
 		36F3EA862718A48C00E6DB63 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				36F3EA912718AD0300E6DB63 /* CustomTableView */,
+				36F3EA872718AC8300E6DB63 /* LabelPackComponent */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		36F3EA872718AC8300E6DB63 /* LabelPackComponent */ = {
+			isa = PBXGroup;
+			children = (
+				36F3EA8A2718AC8400E6DB63 /* LabelPackComponent.swift */,
+				36F3EA892718AC8300E6DB63 /* LabelPackComponentData.swift */,
+			);
+			path = LabelPackComponent;
+			sourceTree = "<group>";
+		};
+		36F3EA8E2718ACBC00E6DB63 /* FontManagers */ = {
+			isa = PBXGroup;
+			children = (
+				36F3EA8F2718ACBC00E6DB63 /* FontManager.swift */,
+			);
+			path = FontManagers;
+			sourceTree = "<group>";
+		};
+		36F3EA912718AD0300E6DB63 /* CustomTableView */ = {
+			isa = PBXGroup;
+			children = (
+				36F3EA972718AD6500E6DB63 /* CustomTableView.swift */,
+				36F3EA922718AD2900E6DB63 /* CustomTableViewCell.swift */,
+				36F3EA952718AD3600E6DB63 /* CustomTableViewCellData.swift */,
+				36F3EA992718AD6D00E6DB63 /* CustomTableViewProtocol.swift */,
+			);
+			path = CustomTableView;
+			sourceTree = "<group>";
+		};
+		36F3EA9B2718AF8E00E6DB63 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				36F3EA9C2718AF8E00E6DB63 /* DefaultNetworkOperationPackage */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +345,9 @@
 			dependencies = (
 			);
 			name = GameOfThronesCharacters;
+			packageProductDependencies = (
+				36F3EA9E2718B03C00E6DB63 /* DefaultNetworkOperationPackage */,
+			);
 			productName = GameOfThronesCharacters;
 			productReference = 36F3EA1F2718A31C00E6DB63 /* GameOfThronesCharacters.app */;
 			productType = "com.apple.product-type.application";
@@ -360,6 +420,9 @@
 				Base,
 			);
 			mainGroup = 36F3EA162718A31C00E6DB63;
+			packageReferences = (
+				36F3EA9D2718B03C00E6DB63 /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */,
+			);
 			productRefGroup = 36F3EA202718A31C00E6DB63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -405,13 +468,17 @@
 				36F3EA792718A37B00E6DB63 /* CharacterResponse.swift in Sources */,
 				36F3EA822718A37B00E6DB63 /* ContinentListViewModel.swift in Sources */,
 				36F3EA7A2718A37B00E6DB63 /* CharacterApiServiceProvider.swift in Sources */,
+				36F3EA8C2718AC8400E6DB63 /* LabelPackComponentData.swift in Sources */,
 				36F3EA722718A37B00E6DB63 /* BaseRequest.swift in Sources */,
 				36F3EA812718A37B00E6DB63 /* ContinentListViewBuilder.swift in Sources */,
+				36F3EA9A2718AD6D00E6DB63 /* CustomTableViewProtocol.swift in Sources */,
 				36F3EA272718A31C00E6DB63 /* ViewController.swift in Sources */,
 				36F3EA852718A37B00E6DB63 /* MainTabBarController.swift in Sources */,
 				36F3EA842718A37B00E6DB63 /* MainTabBarBuilder.swift in Sources */,
 				36F3EA802718A37B00E6DB63 /* TabBarViewImages.swift in Sources */,
+				36F3EA932718AD2900E6DB63 /* CustomTableViewCell.swift in Sources */,
 				36F3EA712718A37B00E6DB63 /* GenericValueProtocol.swift in Sources */,
+				36F3EA962718AD3600E6DB63 /* CustomTableViewCellData.swift in Sources */,
 				36F3EA832718A37B00E6DB63 /* ContinentListViewController.swift in Sources */,
 				36F3EA7B2718A37B00E6DB63 /* ContinentResponse.swift in Sources */,
 				36F3EA232718A31C00E6DB63 /* AppDelegate.swift in Sources */,
@@ -419,10 +486,13 @@
 				36F3EA742718A37B00E6DB63 /* BaseTableViewCell.swift in Sources */,
 				36F3EA762718A37B00E6DB63 /* GenericBaseView.swift in Sources */,
 				36F3EA752718A37B00E6DB63 /* GenericDataProtocol.swift in Sources */,
+				36F3EA982718AD6500E6DB63 /* CustomTableView.swift in Sources */,
 				36F3EA772718A37B00E6DB63 /* BaseView.swift in Sources */,
 				36F3EA7E2718A37B00E6DB63 /* CharacterListViewModel.swift in Sources */,
 				36F3EA252718A31C00E6DB63 /* SceneDelegate.swift in Sources */,
+				36F3EA902718ACBC00E6DB63 /* FontManager.swift in Sources */,
 				36F3EA7F2718A37B00E6DB63 /* CharacterListViewBuilder.swift in Sources */,
+				36F3EA8D2718AC8400E6DB63 /* LabelPackComponent.swift in Sources */,
 				36F3EA7C2718A37B00E6DB63 /* ContinentsApiServiceProvider.swift in Sources */,
 				36F3EA732718A37B00E6DB63 /* BaseViewController.swift in Sources */,
 			);
@@ -778,6 +848,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		36F3EA9D2718B03C00E6DB63 /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bengiianil/DefaultNetworkOperationPackage";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		36F3EA9E2718B03C00E6DB63 /* DefaultNetworkOperationPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36F3EA9D2718B03C00E6DB63 /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */;
+			productName = DefaultNetworkOperationPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 36F3EA172718A31C00E6DB63 /* Project object */;
 }

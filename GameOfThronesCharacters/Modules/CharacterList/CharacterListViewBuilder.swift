@@ -13,6 +13,11 @@ class CharacterListViewBuilder {
         
         let viewModel = CharacterListViewModel()
         let viewController = CharacterListViewController(viewModel: viewModel)
+        
+        viewController.title = "Characters"
+        viewController.tabBarItem.image = TabBarViewImages.characters.value
+        viewController.tabBarItem.selectedImage = TabBarViewImages.charactersSelected.value
+        
         return viewController
     }
 }
