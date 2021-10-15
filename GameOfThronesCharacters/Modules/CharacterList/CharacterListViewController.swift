@@ -10,49 +10,39 @@ import UIKit
 
 class CharacterListViewController: BaseViewController<CharacterListViewModel> {
     
-    
-    private var containerView: UIView = {
-        
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.clipsToBounds = true
-        view.backgroundColor = .white
-        return view
-    }()
-    
-    private lazy var firstName: LabelPackComponent = {
-        let firstName = LabelPackComponent()
-        firstName.translatesAutoresizingMaskIntoConstraints = false
-        //firstName.labelPackAttributes().text = "Sansa"
-        return firstName
-    }()
+    private var tableView: CustomTableView!
     
     override func prepareViewControllerConfigurations() {
         super.prepareViewControllerConfigurations()
-        setupContainerViewLayers()
-        addMainComponents()
+        addMTableView()
+        subscribeViewModelListeners()
+        viewModel.getCharacterList()
     }
     
-    func addMainComponents() {
-        view.addSubview(containerView)
-        containerView.addSubview(firstName)
+    func addMTableView() {
+        tableView = CustomTableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.delegate = viewModel
+        view.addSubview(tableView)
         
         NSLayoutConstraint.activate([
-            containerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            containerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            containerView.topAnchor.constraint(equalTo: view.topAnchor),
-            containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            
-            firstName.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
-            firstName.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
-            firstName.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 40),
-            firstName.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -60),
-
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
     }
-    
-    private func setupContainerViewLayers() {
-        containerView.layer.cornerRadius = 10
-        containerView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+    private func subscribeViewModelListeners() {
+        viewModel.subscribeState { [weak self] state in
+            switch state {
+            case .done:
+                print("Data is ready.")
+                self?.tableView.reloadTableView()
+            case .loading:
+                print("Data is getting.")
+            case .failure:
+                print("Error")
+            }
+        }
     }
 }

@@ -17,7 +17,6 @@ class GenericBaseView<T>: BaseView {
     }
     
     init(frame: CGRect = .zero, data: T? = nil) {
-        
         self.data = data
         super.init(frame: frame)
         loadDataView()

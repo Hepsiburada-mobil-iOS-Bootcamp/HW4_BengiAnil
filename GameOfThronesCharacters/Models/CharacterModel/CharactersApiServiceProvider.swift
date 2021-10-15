@@ -1,5 +1,5 @@
 //
-//  CharacterApiServiceProvider.swift
+//  CharactersApiServiceProvider.swift
 //  GameOfThronesCharacters
 //
 //  Created by Bengi on 14.10.2021.
@@ -8,7 +8,7 @@
 import Foundation
 import DefaultNetworkOperationPackage
 
-class CharacterApiServiceProvider: ApiServiceProvider<BaseRequest> {
+class CharactersApiServiceProvider: ApiServiceProvider<BaseRequest> {
     
     static let url = "https://thronesapi.com/api/v2/Characters"
     

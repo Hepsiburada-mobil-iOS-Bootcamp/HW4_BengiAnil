@@ -7,6 +7,13 @@
 
 import Foundation
 
-class CustomTableViewCellData {
+class CustomTableViewCellData: GenericDataProtocol {
     
+    private(set) var labelInfo: LabelPackComponentData
+    private(set) var imageInfo: CustomImageViewComponentData
+
+    init(labelInfo: LabelPackComponentData, imageInfo: CustomImageViewComponentData) {
+        self.labelInfo = labelInfo
+        self.imageInfo = imageInfo
+    }
 }

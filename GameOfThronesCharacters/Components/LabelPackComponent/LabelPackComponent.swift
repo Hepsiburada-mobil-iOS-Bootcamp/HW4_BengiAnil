@@ -25,7 +25,7 @@ class LabelPackComponent: GenericBaseView<LabelPackComponentData> {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
-        label.text = "Sansa"
+        label.text = " "
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
         label.contentMode = .center
@@ -35,22 +35,6 @@ class LabelPackComponent: GenericBaseView<LabelPackComponentData> {
     }()
 
     private lazy var lastName: UILabel = {
-        labelPackAttributes()
-    }()
-    
-    private lazy var fullName: UILabel = {
-        labelPackAttributes()
-    }()
-
-    private lazy var title: UILabel = {
-        labelPackAttributes()
-    }()
-        
-    private lazy var family: UILabel = {
-        labelPackAttributes()
-    }()
-    
-    func labelPackAttributes() -> UILabel {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
@@ -61,7 +45,61 @@ class LabelPackComponent: GenericBaseView<LabelPackComponentData> {
         label.textAlignment = .center
         label.font = FontManager.regular(18).value
         return label
+    }()
+    
+    private lazy var fullName: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .black
+        label.text = " "
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 0
+        label.contentMode = .center
+        label.textAlignment = .center
+        label.font = FontManager.regular(18).value
+        return label
+    }()
+
+    private lazy var title: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .black
+        label.text = ""
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 0
+        label.contentMode = .center
+        label.textAlignment = .center
+        label.font = FontManager.regular(18).value
+        return label
+    }()
+        
+    private lazy var family: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .black
+        label.text = ""
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 0
+        label.contentMode = .center
+        label.textAlignment = .center
+        label.font = FontManager.regular(18).value
+        return label
+    }()
+    
+    /**
+    func labelPackAttributes() -> UILabel {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .black
+        label.text = ""
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 0
+        label.contentMode = .center
+        label.textAlignment = .center
+        label.font = FontManager.regular(18).value
+        return label
     }
+    */
     override func setupViewConfigurations() {
         super.setupViewConfigurations()
     }

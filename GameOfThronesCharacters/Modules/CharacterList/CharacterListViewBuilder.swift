@@ -11,7 +11,8 @@ class CharacterListViewBuilder {
     
     class func build() -> UIViewController {
         
-        let viewModel = CharacterListViewModel()
+        let formatter = CharacterListDataFormatter()
+        let viewModel = CharacterListViewModel(formatter: formatter)
         let viewController = CharacterListViewController(viewModel: viewModel)
         
         viewController.title = "Characters"
