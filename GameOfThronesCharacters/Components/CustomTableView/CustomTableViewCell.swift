@@ -14,7 +14,7 @@ class CustomTableViewCell: BaseTableViewCell {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.clipsToBounds = true
-        view.backgroundColor = .gray
+        view.backgroundColor = .brown
         return view
     }()
     
