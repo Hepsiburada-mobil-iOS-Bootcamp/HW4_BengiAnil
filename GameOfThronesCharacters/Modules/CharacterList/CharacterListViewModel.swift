@@ -10,7 +10,11 @@ import DefaultNetworkOperationPackage
 
 class CharacterListViewModel {
     
-    private var data: CharacterDataResponse?
+    deinit {
+        print("DEINIT: CharacterListViewModel")
+    }
+    
+    private var data: [CharactersResponse]?
     private var state: CharacterListViewStateBlock?
     private let formatter: CharacterListDataFormatterProtocol
 
@@ -22,56 +26,46 @@ class CharacterListViewModel {
     }
     
     func getCharacterList() {
-        DispatchQueue.main.async {
-            self.fireApiCall { [weak self] result in
-                switch result {
-                case .success(let response):
-                    print("success: \(response)")
-                case .failure(let error):
-                    print("error: \(error)")
-                }
-            }
-        }
+        state?(.loading)
+        fireApiCall(with: apiCallHandler)
     }
     
-    func fireApiCall(with completion: @escaping (Result<CharactersResponse, ErrorResponse>) -> Void) {
+    private func fireApiCall(with completion: @escaping (Result<[CharactersResponse], ErrorResponse>) -> Void) {        
         do {
             let urlRequest = try CharactersApiServiceProvider().returnUrlRequest()
             APIManager.shared.executeRequest(urlRequest: urlRequest, completion: completion)
         } catch let error {
-            print("error: \(error)")
+            print("error : \(error)")
         }
     }
     
-    func dataHandler(with response: CharacterDataResponse) {
-        data = response
-        state?(.done)
-    }
-    
     // MARK: - CallBack Listener
-    private lazy var apiCallHandler: (Result<CharactersResponse, ErrorResponse>) -> Void = { [weak self] result in
-
+    private lazy var apiCallHandler: (Result<[CharactersResponse], ErrorResponse>) -> Void = { [weak self] result in
          switch result {
          case .failure(let error):
              print("error : \(error)")
-         case .success(let data):
-             print("success")
+         case .success(let response):
+            print("success: \(response)")
+             self?.data = response
          }
+        self?.state?(.done)
     }
-
 }
+
 extension CharacterListViewModel: CustomTableViewProtocol {
     func getNumberOfSection() -> Int {
         return 1
     }
     
-    func getNumberOfRowsInSection(in section: Int) -> Int {
+    func getNumberOfItem(in section: Int) -> Int {
+        // return 0
         guard let dataUnwrapped = data else { return 0 }
-        return dataUnwrapped.data.results.count
+        return dataUnwrapped.count
     }
     
-    func getCellForRowAt(at index: Int) -> GenericDataProtocol? {
+    func getData(at index: Int) -> GenericDataProtocol? {
+        // return nil
         guard let dataUnwrapped = data else { return nil }
-        return formatter.getItem(from: dataUnwrapped.data.results[index])
+        return formatter.getItem(from: dataUnwrapped[index])
     }
 }

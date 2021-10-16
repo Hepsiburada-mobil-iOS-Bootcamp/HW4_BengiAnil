@@ -12,58 +12,32 @@ class LabelPackComponent: GenericBaseView<LabelPackComponentData> {
     
     private lazy var mainStackView: UIStackView = {
         
-        let stackView = UIStackView(arrangedSubviews: [firstName, lastName, fullName, title, family])
+        let stackView = UIStackView(arrangedSubviews: [fullName, title, family])
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.alignment = .center
+        stackView.alignment = .fill
         stackView.distribution = .fill
         stackView.axis = .vertical
         stackView.spacing = 10
         return stackView
     }()
     
-    private lazy var firstName: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .black
-        label.text = " "
-        label.lineBreakMode = .byWordWrapping
-        label.numberOfLines = 0
-        label.contentMode = .center
-        label.textAlignment = .center
-        label.font = FontManager.regular(18).value
-        return label
-    }()
-
-    private lazy var lastName: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .black
-        label.text = " "
-        label.lineBreakMode = .byWordWrapping
-        label.numberOfLines = 0
-        label.contentMode = .center
-        label.textAlignment = .center
-        label.font = FontManager.regular(18).value
-        return label
-    }()
-    
     private lazy var fullName: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .black
-        label.text = " "
+        label.textColor = .blue
+        label.text = ""
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
         label.contentMode = .center
         label.textAlignment = .center
-        label.font = FontManager.regular(18).value
+        label.font = FontManager.bold(20).value
         return label
     }()
 
     private lazy var title: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .black
+        label.textColor = .white
         label.text = ""
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
@@ -76,7 +50,7 @@ class LabelPackComponent: GenericBaseView<LabelPackComponentData> {
     private lazy var family: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .black
+        label.textColor = .white
         label.text = ""
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
@@ -86,20 +60,6 @@ class LabelPackComponent: GenericBaseView<LabelPackComponentData> {
         return label
     }()
     
-    /**
-    func labelPackAttributes() -> UILabel {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .black
-        label.text = ""
-        label.lineBreakMode = .byWordWrapping
-        label.numberOfLines = 0
-        label.contentMode = .center
-        label.textAlignment = .center
-        label.font = FontManager.regular(18).value
-        return label
-    }
-    */
     override func setupViewConfigurations() {
         super.setupViewConfigurations()
     }
@@ -125,10 +85,9 @@ class LabelPackComponent: GenericBaseView<LabelPackComponentData> {
         
         guard let data = returnData() else{ return }
         
-        firstName.text = data.firstName
-        lastName.text = data.lastName
         fullName.text = data.fullName
         title.text = data.title
         family.text = data.family
     }
+    
 }

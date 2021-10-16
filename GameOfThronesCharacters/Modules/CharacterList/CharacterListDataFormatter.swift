@@ -13,20 +13,9 @@ class CharacterListDataFormatter: CharacterListDataFormatterProtocol {
     func getItem(from data: CharactersResponse) -> CustomTableViewCellData {
         
         return CustomTableViewCellData(
-            labelInfo: LabelPackComponentData(firstName: getDescription(from: data.firstName),
-                                              lastName: getDescription(from: data.lastName),
-                                              fullName: getDescription(from: data.fullName),
-                                              title: getDescription(from: data.title),
-                                              family: getDescription(from: data.family)),
-            imageInfo: CustomImageViewComponentData(imageUrl: getDescription(from: data.imageURL)))
-    }
-    
-    
-    private func getDescription(from rawValue: String?) -> String {
-        guard let value = rawValue, !value.isEmpty else {
-            return "Unknown"
-        }
-        return value
-
+            labelInfo: LabelPackComponentData(fullName: data.fullName,
+                                            title: data.title,
+                                            family: data.family),
+            imageInfo: CustomImageViewComponentData(imageUrl: data.imageURL))
     }
 }

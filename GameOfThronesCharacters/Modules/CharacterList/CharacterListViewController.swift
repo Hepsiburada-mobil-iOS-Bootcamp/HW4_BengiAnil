@@ -10,16 +10,20 @@ import UIKit
 
 class CharacterListViewController: BaseViewController<CharacterListViewModel> {
     
+    deinit {
+        print("DEINIT: CharacterListViewController")
+    }
+    
     private var tableView: CustomTableView!
     
     override func prepareViewControllerConfigurations() {
         super.prepareViewControllerConfigurations()
-        addMTableView()
+        addTableView()
         subscribeViewModelListeners()
         viewModel.getCharacterList()
     }
     
-    func addMTableView() {
+    func addTableView() {
         tableView = CustomTableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.delegate = viewModel

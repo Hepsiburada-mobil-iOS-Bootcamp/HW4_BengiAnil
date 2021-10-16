@@ -26,10 +26,14 @@ struct CharactersResponseModel: Codable {
 
 // MARK: - CharactersResponse
 struct CharactersResponse: Codable {
-    let id: Int?
-    let firstName, lastName, fullName, title: String?
-    let family, image: String?
-    let imageURL: String?
+    let id: Int
+    let firstName: String
+    let lastName: String
+    let fullName: String
+    let title: String
+    let family: String
+    let image: String
+    let imageURL: String
 
     enum CodingKeys: String, CodingKey {
         case id, firstName, lastName, fullName, title, family, image

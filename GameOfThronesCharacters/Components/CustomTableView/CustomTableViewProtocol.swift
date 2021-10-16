@@ -11,6 +11,6 @@ import UIKit
 protocol CustomTableViewProtocol: AnyObject {
     
     func getNumberOfSection() -> Int
-    func getNumberOfRowsInSection(in section: Int) -> Int
-    func getCellForRowAt(at index: Int) -> GenericDataProtocol?
+    func getNumberOfItem(in section: Int) -> Int
+    func getData(at index: Int) -> GenericDataProtocol?
 }

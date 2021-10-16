@@ -13,23 +13,36 @@ class CustomTableViewCell: BaseTableViewCell {
     private lazy var containerView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.clipsToBounds = true
+        view.backgroundColor = .gray
         return view
     }()
     
     private lazy var mainStackView: UIStackView = {
-        let view = UIStackView(arrangedSubviews: [labelComponent, imageComponent])
+        let view = UIStackView(arrangedSubviews: [imageComponent, labelComponent ])
         view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    
-    private lazy var labelComponent: LabelPackComponent = {
-        let view = LabelPackComponent()
-        view.translatesAutoresizingMaskIntoConstraints = false
+        view.alignment = .center
+        view.distribution = .fill
+        view.axis = .horizontal
+        view.spacing = 10
         return view
     }()
     
     private lazy var imageComponent: CustomImageViewComponentContainer = {
         let view = CustomImageViewComponentContainer()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        view.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        view.layer.cornerRadius = 4
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOffset = CGSize(width: 0, height: 4)
+        view.layer.shadowRadius = 4
+        view.layer.shadowOpacity = 1
+        return view
+    }()
+    
+    private lazy var labelComponent: LabelPackComponent = {
+        let view = LabelPackComponent()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()

@@ -10,14 +10,19 @@ import UIKit
 
 class CustomTableView: BaseView {
     
+    deinit {
+        print("DEINIT: CustomTableView")
+    }
+    
     weak var delegate: CustomTableViewProtocol?
     
     private lazy var tableView: UITableView = {
         let view = UITableView()
+        view.translatesAutoresizingMaskIntoConstraints = false
         view.dataSource = self
         view.delegate = self
-        view.register(UITableViewCell.self, forCellReuseIdentifier: CustomTableViewCell.identifier)
-        view.translatesAutoresizingMaskIntoConstraints = false
+        view.estimatedRowHeight = UITableView.automaticDimension
+        view.register(CustomTableViewCell.self, forCellReuseIdentifier: CustomTableViewCell.identifier)
         return view
     }()
     
@@ -45,18 +50,19 @@ class CustomTableView: BaseView {
     }
 }
 
-extension CustomTableView: UITableViewDataSource, UITableViewDelegate {
+extension CustomTableView: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return delegate?.getNumberOfSection() ?? 0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return delegate?.getNumberOfRowsInSection(in: section) ?? 0
+        return delegate?.getNumberOfItem(in: section) ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let data = delegate?.getCellForRowAt(at: indexPath.row) else { fatalError("Please provide data.") }
+        
+        guard let data = delegate?.getData(at: indexPath.row) else { fatalError("Please provide data.") }
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier, for: indexPath) as? CustomTableViewCell else { return UITableViewCell() }
         
