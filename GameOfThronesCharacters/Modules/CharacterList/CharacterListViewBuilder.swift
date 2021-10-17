@@ -22,7 +22,7 @@ class CharacterListViewBuilder {
         let navigationViewController = UINavigationController(rootViewController: viewController)
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = .systemBackground
+        appearance.backgroundColor = .systemBlue
         viewController.navigationController?.navigationBar.standardAppearance = appearance;
         viewController.navigationController?.navigationBar.scrollEdgeAppearance = viewController.navigationController?.navigationBar.standardAppearance
         
