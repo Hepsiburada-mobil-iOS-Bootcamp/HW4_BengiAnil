@@ -14,7 +14,7 @@ class CustomTableViewCell: BaseTableViewCell {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.clipsToBounds = true
-        view.backgroundColor = .brown
+        view.backgroundColor = .systemBrown
         return view
     }()
     
@@ -53,14 +53,14 @@ class CustomTableViewCell: BaseTableViewCell {
     }
     
     private func addInfoComponents() {
-        addSubview(containerView)
+        contentView.addSubview(containerView)
         containerView.addSubview(mainStackView)
         
         NSLayoutConstraint.activate([
-            containerView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            containerView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            containerView.topAnchor.constraint(equalTo: topAnchor),
-            containerView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            containerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            containerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            containerView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            containerView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
             
             mainStackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 10),
             mainStackView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -10),
